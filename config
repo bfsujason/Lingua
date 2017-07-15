@@ -1,0 +1,33 @@
+# start Lingua config
+
+##############################################################################
+
+# config path
+
+app      = /home/jason/perl-lib/Lingua
+ext-lib  = $app/ext-lib
+temp     = $app/temp
+
+##############################################################################
+
+# config Stanford CoreNLP
+
+stanford-corenlp       = $ext-lib/stanford-corenlp.jar
+stanford-corenlp-model = $ext-lib/stanford-corenlp-model.jar
+
+##############################################################################
+
+# config Inline::Java
+
+local-jvm    = 0
+mod-perl-jvm = 1
+
+local-java    = $temp/local-java
+mod-perl-java = $temp/web
+
+jvm-mem = "-Xmx4000m"
+jvm-cp  = ${stanford-corenlp}:${stanford-corenlp-model}
+
+##############################################################################
+
+# end Lingua confg
