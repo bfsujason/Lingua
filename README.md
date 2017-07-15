@@ -4,7 +4,7 @@ A Perl wrapper for StanfordCoreNLP
 
 ## Usage
 
-#!/usr/bin/perl
+`#!/usr/bin/perl
 
 use strict;
 use warnings;
@@ -37,4 +37,4 @@ foreach my $para ( @{$paras} ) {
     }   
 }
 
-__END__
+__END__`
